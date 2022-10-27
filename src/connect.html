@@ -7,7 +7,7 @@
     <link rel="icon" href="NFT-images/shopping-cart.svg">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light position-fixed w-100 fixed-top mb-5 navBar animate__animated ">
+<nav class="navbar navbar-expand-lg navbar-light position-fixed w-100 fixed-top py-4 navBar animate__animated ">
     <div class="container">
         <a class="navbar-brand" href="#">
             <img src="NFT-images/favicon.png" alt="" class="favicon">
@@ -24,16 +24,16 @@
                     <a class="nav-link fw-bold " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Catalog
                     </a>
-                    <!--                    <ul class="dropdown-menu" id="catalog-items">-->
-                    <!--                        <li><a class="dropdown-item" href="#">Catalog v.1</a></li>-->
-                    <!--                        <li><a class="dropdown-item" href="#">Catalog v.2</a></li>-->
-                    <!--                        <li><a class="dropdown-item" href="#">Single item - Auction live</a></li>-->
-                    <!--                        <li><a class="dropdown-item" href="#">Single item - Auction ended</a></li>-->
-                    <!--                        <li><a class="dropdown-item" href="#">Single item - Buy now</a></li>-->
-                    <!--                        <li><a class="dropdown-item" href="#">Vendor page</a></li>-->
-                    <!--                        <li><a class="dropdown-item" href="#">Connect wallet</a></li>-->
-                    <!--                        <li><a class="dropdown-item" href="#">Create items</a></li>-->
-                    <!--                    </ul>-->
+                        <ul class="dropdown-menu" id="catalog-items">
+                            <li><a class="dropdown-item" href="#">Catalog v.1</a></li>
+                            <li><a class="dropdown-item" href="#">Catalog v.2</a></li>
+                            <li><a class="dropdown-item" href="#">Single item - Auction live</a></li>
+                            <li><a class="dropdown-item" href="#">Single item - Auction ended</a></li>
+                            <li><a class="dropdown-item" href="#">Single item - Buy now</a></li>
+                            <li><a class="dropdown-item" href="#">Vendor page</a></li>
+                            <li><a class="dropdown-item" href="#">Connect wallet</a></li>
+                            <li><a class="dropdown-item" href="#">Create items</a></li>
+                        </ul>
                 </li>
                 <li class="dropdown nav-item" id="account">
                     <a class="nav-link fw-bold " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -55,7 +55,7 @@
             <div class="d-flex align-items-center ms-auto">
                 <div class="nav-link-cus fw-bold search" id="search">
                     <a href="#" class="text-decoration-none">
-                        <i class="bi bi-search" style="font-size: 1.2rem" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Search"></i>
+                        <i class="bi bi-search" style="font-size: 1.2rem" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Search"></i>
                     </a>
                 </div>
                 <div class="nav-link-cus fw-bold">
@@ -117,19 +117,24 @@
         </div>
     </div>
 </nav>
-<section class="container" id="showSearch">
-    <div class="row my-5">
-        <div class="col-lg-12 mb-5"></div>
-        <div class="col-lg-12 mt-5">
-            <div class="input-group d-none animate__animated searchResult" id="searchResult">
+<section>
+    <div class="row d-block w-100" style="height: 150px;" id="topMargin">
+        <div class="col"></div>
+    </div>
+</section>
+<section class="container">
+    <div class="row" id="showSearch">
+        <div class="col-lg-12"></div>
+        <div class="col-lg-12">
+            <div class="input-group animate__animated searchResult d-none" id="searchResult">
                 <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
-                <input type="text" style="padding-left: 45px" class="form-control-lg rounded-start w-100" id="searchText">
+                <input type="text" style="padding-left: 45px; background-color: #f0f2f5;" class="form-control-lg rounded-start w-100 border-0 shadow" id="searchText">
             </div>
         </div>
     </div>
 </section>
 <section class="container-fluid slide-Down navbarTouch" id="navBreadcrumb">
-    <div class="row align-items-center mt-3">
+    <div class="row align-items-center">
         <div class="col-lg-12">
            <div class="container">
                <div class="row py-5">
@@ -143,8 +148,8 @@
                                     <li class="ms-auto">
                                         <ol class="breadcrumb mb-0">
                                             <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-white"><i class="bi bi-house me-1 text-white"></i>Home</a></li>
-                                            <li class="breadcrumb-item active" aria-current="page"><a href="#" class="text-decoration-none text-white">NFTs marketplace</a></li>
-                                            <li class="breadcrumb-item active" aria-current="page"><a href="#" class="text-decoration-none text-white">connect wallet</a></li>
+                                            <li class="breadcrumb-item active" aria-current="page"><a href="catalog.html" class="text-decoration-none text-white">NFTs marketplace</a></li>
+                                            <li class="breadcrumb-item active" aria-current="page"><a href="connect.html" class="text-decoration-none text-white">connect wallet</a></li>
                                         </ol>
                                     </li>
                                </ol>
@@ -157,9 +162,9 @@
     </div>
 </section>
 <section class="container" id="walletCardGallery">
-    <div class="row justify-content-between mb-5">
+    <div class="row justify-content-between mb-5 min-vh-100">
         <div class="col-lg-12 ">
-           <div class="my-4 slide-Down">
+           <div class="mt-5 mb-4 slide-Down">
                <p>Choose the most suitable blockchain wallet for your needs</p>
                <a href="#" class="fw-bold">Learn more about wallets</a>
            </div>
@@ -245,11 +250,11 @@
         </div>
     </div>
 </section>
-<footer class="container-fluid d-lg-block d-md-none slide-Down" id="footer">
+<footer class="container-fluid d-lg-block d-md-none" id="footer">
     <div class="row footer-row p-5 mt-5">
         <div class="col-lg-12">
             <div class="container">
-                <div class="row justify-content-between">
+                <div class="row justify-content-between slide-Down">
                     <div class="col-lg-5 col-md-5 col-sm-6">
                         <h5 class="text-white">Stay Informed</h5>
                         <div class="input-group subscribe-input-group mb-3">
@@ -267,7 +272,7 @@
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-5 col-sm-6">
-                        <div class="d-flex flex-column justify-content-between h-100">
+                        <div class="d-flex flex-column justify-content-between h-100 slide-Down">
                             <h5 class="text-white fw-bold">Company</h5>
                             <a href="#" class="text-decoration-none text-white"><small>About Us</small></a>
                             <a href="#" class="text-decoration-none text-white"><small>How it Works</small></a>
@@ -278,7 +283,7 @@
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-5 col-sm-6">
-                        <div class="d-flex flex-column justify-content-between h-100">
+                        <div class="d-flex flex-column justify-content-between h-100 slide-Down">
                             <h5 class="text-white fw-bold">Marketplace</h5>
                             <a href="#" class="text-decoration-none text-white"><small>All NFTs</small></a>
                             <a href="#" class="text-decoration-none text-white"><small>New</small></a>
@@ -289,7 +294,7 @@
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-5 col-sm-6">
-                        <div class="d-flex flex-column h-100">
+                        <div class="d-flex flex-column h-100 slide-Down">
                             <h5 class="text-white fw-bold">Help</h5>
                             <a href="#" class="text-decoration-none text-white"><small>Terms and Conditions</small></a>
                             <a href="#" class="text-decoration-none text-white"><small>Privacy Policy</small></a>
@@ -307,7 +312,7 @@
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-lg-12 py-5"></div>
-                    <div class="col-lg-4 col-md-5 col-sm-6">
+                    <div class="col-lg-4 col-md-5 col-sm-6 slide-Down">
                         <h5 class="text-white">Stay Informed</h5>
                         <div class="input-group mt-4 mb-1 d-flex">
                             <i class="bi bi-envelope position-relative top-50 start-0 input-group-text bg-white"></i>
@@ -324,7 +329,7 @@
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-5 col-sm-6">
-                        <div class="d-flex flex-column justify-content-between h-100">
+                        <div class="d-flex flex-column justify-content-between h-100 slide-Down">
                             <h5 class="text-white fw-bold">Company</h5>
                             <a href="#" class="text-decoration-none text-white"><small>About Us</small></a>
                             <a href="#" class="text-decoration-none text-white"><small>How it Works</small></a>
@@ -336,7 +341,7 @@
                     </div>
                     <div class="col-md-12 d-flex justify-content-between mt-5">
                         <div class="col-lg-2 col-md-5 col-sm-6">
-                            <div class="d-flex flex-column justify-content-between h-100">
+                            <div class="d-flex flex-column justify-content-between h-100 slide-Down">
                                 <h5 class="text-white fw-bold">Marketplace</h5>
                                 <a href="#" class="text-decoration-none text-white"><small>All NFTs</small></a>
                                 <a href="#" class="text-decoration-none text-white"><small>New</small></a>
@@ -347,7 +352,7 @@
                             </div>
                         </div>
                         <div class="col-lg-2 col-md-5 col-sm-6">
-                            <div class="d-flex flex-column h-100" style="padding-left: 10px">
+                            <div class="d-flex flex-column h-100" style="padding-left: 10px slide-Down">
                                 <h5 class="text-white fw-bold">Help</h5>
                                 <a href="#" class="text-decoration-none text-white"><small>Terms and Conditions</small></a>
                                 <a href="#" class="text-decoration-none text-white"><small>Privacy Policy</small></a>
@@ -382,12 +387,12 @@
 <section class="container">
     <div class="row">
         <div class="col">
-            <a href="#showSearch" id="scrollToTop2" class="scrollToTop p-3 d-inline-block rounded-2 position-fixed animate__animated" style="background-color: #61039a; right: 50px; bottom: 70px">
+            <a href="#showSearch" id="scrollToTop" class="scrollToTop p-3 d-none rounded-2 position-fixed animate__animated" style="background-color: #61039a; right: 50px; bottom: 70px">
                 <i class="bi bi-chevron-double-up text-white"></i>
             </a>
         </div>
     </div>
 </section>
-<script type="module" src="./js/main.js"></script>
+<script type="module" src="./js/connect.js"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@ import * as bootstrap from 'bootstrap';
 import'waypoints/lib/noframework.waypoints.min';
 import ScrollReveal from "scrollreveal";
 import Typed from "typed.js";
+import { Tooltip, Toast, Popover } from 'bootstrap';
 
 let navBar = document.querySelector(".navBar");
 let navbarTouch = document.querySelectorAll(".navbarTouch");
@@ -108,13 +109,15 @@ let waypoint1 = new Waypoint({
     element: document.getElementById('recent-drop'),
     handler: function(direction) {
         if(direction === "down"){
-            console.log("waypoint start");
+            // console.log("waypoint start");
             navBar.classList.toggle("shadow");
             navBar.classList.toggle("animate__fadeInDown");
+            navBar.classList.toggle("py-4")
         }else if(direction === "up") {
-            console.log("restart");
+            // console.log("restart");
             navBar.classList.toggle("animate__fadeInDown");
             navBar.classList.toggle("shadow");
+            navBar.classList.toggle("py-4")
         }
     },
     offset: '10%'
@@ -124,11 +127,11 @@ let waypoint2 = new Waypoint({
     element: document.getElementById('trending'),
     handler: function(direction) {
         if(direction === "down"){
-            console.log("waypoint start");
+            // console.log("waypoint start");
             scrollToTop.classList.toggle("d-none");
             scrollToTop.classList.toggle("animate__fadeInUp")
         }else if(direction === "up") {
-            console.log("restart");
+            // console.log("restart");
             scrollToTop.classList.toggle("d-none")
             scrollToTop.classList.toggle("animate__fadeInUp")
         }
@@ -136,13 +139,4 @@ let waypoint2 = new Waypoint({
     offset: '10%'
 });
 
-//connect wallet
-
-//catalog search Text
-
-//filter
-showFilter.addEventListener("click",function (){
-    filterDetail.classList.toggle("d-none");
-    filterDetail.classList.toggle("animate__backInDown")
-})
 

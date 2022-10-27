@@ -36,18 +36,11 @@ $breadcrumb-divider-color:white;
 .navbar-collapse .navbar-nav:hover #catalog #catalog-items{
   display: block;
 }
-.show-items{
-
-}
-.carousel-words{
-}
 .vskew{
   //background-color:rgba(78,84,200,.09);
   background-image: linear-gradient(45deg, rgb(140, 85, 250) -50%,rgb(200, 215, 253) 75%,rgb(143, 230, 243) 100%);
   position: relative;
   transform: skewY(-4deg);
-}
-#home{
 }
 .skewContainer{
   //background-image: url("NFT-images/hero-bg.png");
@@ -63,9 +56,6 @@ $breadcrumb-divider-color:white;
   height: 40px;
   border-color: white;
   border-radius: 50%;
-}
-.card-wrapper{
-
 }
 @media screen and (min-width: 568px){
   .card{
@@ -106,8 +96,6 @@ $breadcrumb-divider-color:white;
   width: calc(100%/3);
   margin-right: 0;
 }
-.topCreatorCard{
-}
 #top-creators img{
   width: 80px;
   padding-left:7px ;
@@ -130,11 +118,11 @@ $breadcrumb-divider-color:white;
     display: none;
   }
 }
-@media screen and (max-width: 821px) {
-  #topCreatorIndicatorPh{
+// @media screen and (max-width: 821px) {
+//   #topCreatorIndicatorPh{
 
-  }
-}
+//   }
+// }
 .topCreatorIndicatorPhIcon{
   background-color: #ff8f71;
   padding: 3px;
@@ -158,9 +146,6 @@ $breadcrumb-divider-color:white;
 }
 .recommended-card-border{
   border-bottom: 5px solid #eb00ff !important;
-}
-.recommended-card{
-
 }
 .recommended-card-footer{
   margin-inline-start: 0.5em;
@@ -233,11 +218,11 @@ $breadcrumb-divider-color:white;
     display: none;
   }
 }
-.envelope{
-  //position: absolute;
-  //border: none;
-  //margin-left: 10px;
-}
+// .envelope{
+//   position: absolute;
+//   border: none;
+//   margin-left: 10px;
+// }
 .subscribe-text{
   margin-bottom: 23px !important;
   margin-top: 16px;
@@ -356,4 +341,13 @@ div .youtube:hover{
 }
 .moneyType{
   width: calc(100%/2);
+}
+
+.peginate:active{
+  color: #4e54c8;
+}
+.peginate-btn:hover{
+  a{
+    color: red;
+  }
 }
