@@ -82,15 +82,6 @@ let typed1 = new Typed(searchText, {
     loop: true
 });
 
-// catalog.addEventListener("mouseenter", function (){
-//     console.log ("show items")
-//     catalogItems.classList.toggle("d-none")
-// })
-// catalog.addEventListener("mouseout", function (){
-//     console.log ("hide items")
-//     catalogItems.classList.toggle("d-none")
-// })
-
 //countDownClock
 let countDownAll = document.querySelectorAll(".count-down");
 function clock (){

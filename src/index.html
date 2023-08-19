@@ -7,136 +7,105 @@
     <link rel="icon" href="NFT-images/shopping-cart.svg">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light position-fixed w-100 fixed-top mb-5 py-4 navBar animate__animated ">
-    <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="NFT-images/favicon.png" alt="" class="favicon">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="dropdown nav-item">
-                    <a class="nav-link fw-bold" aria-current="page" href="#home">Home</a>
-                </li>
-                <li class="dropdown nav-item" id="catalog">
-                    <a class="nav-link fw-bold " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Catalog
+<section class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg navbar-light position-fixed w-100 fixed-top mb-5 py-4 navBar animate__animated ">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- <img src="NFT-images/favicon.png" alt="" class="favicon"> -->
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-cart-dash-fill text-danger fw-bold fs-1 mb-2"></i>
+                            <h4 class="fw-bold text-muted ps-1">Cartzilla</h4>
+                        </div>
                     </a>
-<!--                    <ul class="dropdown-menu" id="catalog-items">-->
-<!--                        <li><a class="dropdown-item" href="#">Catalog v.1</a></li>-->
-<!--                        <li><a class="dropdown-item" href="#">Catalog v.2</a></li>-->
-<!--                        <li><a class="dropdown-item" href="#">Single item - Auction live</a></li>-->
-<!--                        <li><a class="dropdown-item" href="#">Single item - Auction ended</a></li>-->
-<!--                        <li><a class="dropdown-item" href="#">Single item - Buy now</a></li>-->
-<!--                        <li><a class="dropdown-item" href="#">Vendor page</a></li>-->
-<!--                        <li><a class="dropdown-item" href="#">Connect wallet</a></li>-->
-<!--                        <li><a class="dropdown-item" href="#">Create items</a></li>-->
-<!--                    </ul>-->
-                </li>
-                <li class="dropdown nav-item" id="account">
-                    <a class="nav-link fw-bold " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Account
-                    </a>
-                    <ul class="dropdown-menu" id="profile-items">
-                        <li><a class="dropdown-item" href="#">Profile setting</a></li>
-                        <li><a class="dropdown-item" href="#">My items</a></li>
-                        <li><a class="dropdown-item" href="#">My collections</a></li>
-                        <li><a class="dropdown-item" href="#">Favourite</a></li>
-                        <li><a class="dropdown-item" href="#">Notifications</a></li>
-                    </ul>
-                </li>
-
-                <li class="nav-item fw-bold">
-                    <a class="nav-link" href="#">Back to main Demo</a>
-                </li>
-            </ul>
-            <div class="d-flex align-items-center ms-auto">
-                <div class="nav-link-cus fw-bold search" id="search">
-                    <a href="#" class="text-decoration-none">
-                        <i class="bi bi-search" style="font-size: 1.2rem" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Search"></i>
-                    </a>
-                </div>
-                <div class="nav-link-cus fw-bold">
-                    <a href="#" class="text-decoration-none" title="account">
-                        <i class="bi bi-person" style="font-size: 1.5rem" data-bs-toggle="tooltip"  data-bs-placement="top" data-bs-title="Account" data-bs-target="reg-modal"></i>
-                    </a>
-                    <!-- Modal -->
-                    <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <div class="">
-                                        <a href="#" class="text-decoration-none">
-                                            <i class="bi bi-lock"></i>
-                                            <small>Sign in</small>
-                                        </a>
-                                    </div>
-                                    <div class="px-5">
-                                        <a href="#" class="text-decoration-none">
-                                            <i class="bi bi-person"></i>
-                                            <small>Sign Up</small>
-                                        </a>
-                                    </div>
-                                    <a type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
-                                </div>
-                                <div class="modal-body">
-                                    <form action="">
-                                        <div class="mb-3">
-                                            <label for="email" class="col-form-label">Email address: </label>
-                                            <input type="text" id="email" class="form-control" placeholder="example@gmail.com">
-                                        </div>
-                                        <div class="">
-                                            <label for="password" class="col-form-label">Password</label>
-                                            <div class="input-group">
-                                                <input type="password" id="password" class="form-control input-group-text">
-                                                <i class="bi bi-eye input-group-text border-0"></i>
-                                            </div>
-                                        </div>
-                                        <div class="mt-2 d-flex justify-content-between mb-3">
-                                            <div class="form-check form-switch">
-                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                                                <p>Remember Me</p>
-                                            </div>
-                                            <a href="#" class="text-decoration-none">Forgot Password</a>
-                                        </div>
-                                        <button type="button" class="btn btn-primary w-100">Register</button>
-                                    </form>
-                                </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2">
+                            <li class="dropdown nav-item">
+                                <a class="nav-link fw-bold" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="dropdown nav-item" id="catalog">
+                                <a class="nav-link fw-bold " href="catalog.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Catalog
+                                </a>
+                               <ul class="dropdown-menu" id="catalog-items">
+                                   <li><a class="dropdown-item" href="#">Catalog v.1</a></li>
+                                   <li><a class="dropdown-item" href="#">Catalog v.2</a></li>
+                                   <li><a class="dropdown-item" href="#">Single item - Auction live</a></li>
+                                   <li><a class="dropdown-item" href="#">Single item - Auction ended</a></li>
+                                   <li><a class="dropdown-item" href="#">Single item - Buy now</a></li>
+                                   <li><a class="dropdown-item" href="#">Vendor page</a></li>
+                                   <li><a class="dropdown-item" href="#">Connect wallet</a></li>
+                                   <li><a class="dropdown-item" href="#">Create items</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown nav-item" id="account">
+                                <a class="nav-link fw-bold " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Account
+                                </a>
+                                <ul class="dropdown-menu" id="profile-items">
+                                    <li><a class="dropdown-item" href="#">Profile setting</a></li>
+                                    <li><a class="dropdown-item" href="#">My items</a></li>
+                                    <li><a class="dropdown-item" href="#">My collections</a></li>
+                                    <li><a class="dropdown-item" href="#">Favourite</a></li>
+                                    <li><a class="dropdown-item" href="#">Notifications</a></li>
+                                </ul>
+                            </li>
+            
+                            <li class="nav-item fw-bold">
+                                <a class="nav-link" href="#">Back to main Demo</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex align-items-center ms-auto">
+                            <div class="nav-link-cus fw-bold search" id="search">
+                                <a href="#" class="text-decoration-none">
+                                    <i class="bi bi-search" style="font-size: 1.2rem" data-bs-toggle="tooltip" 
+                                    data-bs-placement="top" data-bs-title="Search"></i>
+                                </a>
+                            </div>
+                            <div class="nav-link-cus fw-bold">
+                                <a href="#" class="text-decoration-none" title="account">
+                                    <i class="bi bi-person" style="font-size: 1.5rem" data-bs-toggle="tooltip"  
+                                    data-bs-placement="top" data-bs-title="Account" data-bs-target="reg-modal"></i>
+                                </a>
+                            </div>
+                            <div class="nav-link-custom">
+                                <a href="connect.html" class="btn btn-primary connectWallet">
+                                    connect wallet
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="nav-link-custom">
-                    <a href="connect.html" class="btn btn-primary connectWallet">
-                        connect wallet
-                    </a>
-                </div>
-            </div>
+            </nav>
         </div>
     </div>
-</nav>
+</section>
 <section class="container-fluid vskew" id="home">
     <div class="row justify-content-center align-items-center my-5 min-vh-100">
         <div class="col-lg-12">
-            <div class="container skewContainer" >
-                <div class="row mt-5">
-                    <div class="col-lg-12 mt-5 mb-3">
-                        <div class="input-group invisible animate__animated searchResult" id="searchResult">
+            <div class="container skewContainer mt-5">
+                <div class="row ">
+                    <div class="col-lg-12">
+                        <div class="input-group invisible animate__animated searchResult mt-5 mb-3" id="searchResult">
                             <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
-                            <input type="text" style="padding-left: 45px" class="form-control-lg rounded-start w-100 border-0" id="searchText">
+                            <input type="text" style="padding-left: 45px" class="form-control-lg rounded-start w-100 border-0" 
+                            id="searchText">
                         </div>
                     </div>
                 </div>
-                <div class="row min-vh-80 mt-5 mb-5 align-items-center justify-content-center" id="heroData">
+                <div class="row min-vh-80 mb-5 align-items-center justify-content-center" id="heroData">
                     <div class="col-lg-6 col-md-10 mb-5">
                         <div class="me-lg-5">
-                            <h6 class="display-6 fw-bold me-1 slide-Down">Discover rare digital art and collect NFTs</h6>
+                            <h6 class="display-6 fw-bold text-black-50 me-1 slide-Down">Discover Rare Digital Art and collect NFTs</h6>
                             <p class="mt-3 mb-4 text-black-50 slide-Down">The world's first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs).</p>
                             <div class="mt-5">
                                 <a href="#" class="btn btn-lg btn-primary py-2 px-3 me-3 mb-lg-0 mb-md-0 mb-4 slide-Down">Explore marketplace</a>
-                                <a href="#" class="btn btn-lg btn-outline-secondary py-2 px-3 text-black slide-Down">Create your NFT</a>
+                                <a href="#" class="btn btn-lg btn-outline-secondary py-2 px-3 text-info slide-Down">Create your NFT</a>
                             </div>
                         </div>
                     </div>
@@ -829,7 +798,7 @@
                         </div>
                     </div>
                     <div class="col text-center mt-5 slide-left">
-                        <a href="#" class="btn btn-outline-primary p-2 ">Browse marketplace</a>
+                        <a href="#" class="btn btn-primary p-2 ">Browse marketplace</a>
                     </div>
                 </div>
                 </div>
@@ -1216,7 +1185,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="d-flex align-items-center my-5 slide-right">
-                            <h3 CLASS="fw-bold">Recommended Collections</h3>
+                            <h3 class="fw-bold">Recommended Collections</h3>
                             <a href="#" class="btn btn-outline-primary ms-auto p-2">
                                 view all
                                 <i class="bi bi-chevron-right"></i>
@@ -1721,12 +1690,12 @@
         <div class="col-lg-12 col-md-12 col-11 subscribe-card">
             <h2 class="fw-bold mb-0">Never miss a drop!</h2>
             <p class="mb-0 subscribe-text">Subscribe to our ultra-exclusive drop list and be the first to know about upcoming drops.</p>
-            <div class="input-group subscribe-input-group mb-3 justify-content-center align-items-center">
-                <i class="bi bi-envelope position-absolute top-50 start-0 translate-middle-y ms-3"></i>
-                <input type="email" name="EMAIL" class="form-control-lg border-0 rounded-start" placeholder="Your Email" style="padding-left: 45px;" required>
-                <a href="#" class="btn btn-lg btn-primary">Subscribe <sup>*</sup></a>
+            <div class="input-group mt-4 mb-1 d-flex w-75">
+                <i class="bi bi-envelope position-relative top-50 start-0 input-group-text bg-white"></i>
+                <input type="email" name="EMAIL" class="form-control border-0" placeholder="Your Email" required>
+                <a href="#" class="btn btn btn-primary">Subscribe <sup>*</sup></a>
             </div>
-            <small class="d-block"><sup>*</sup>Receive early discount offers, updates and new products info.</small>
+            <small class="d-block mt-2"><sup>*</sup>Receive early discount offers, updates and new products info.</small>
         </div>
     </div>
 </section>
@@ -1805,7 +1774,7 @@
                             <a href="#" class="btn btn btn-primary">Subscribe <sup>*</sup></a>
                         </div>
                         <small class="text-white-50"><sup>*</sup>Subscribe to our newsletter to receive early discount offers, updates and new products info.</small>
-                        <div class="mt-5">
+                        <div class="mt-5 mb-3">
                             <a href="https://twitter.com" class="btn btn-sm btn-outline-secondary twitter"><i class="bi bi-twitter"></i></a>
                             <a href="https://facebook.com" class="btn btn-sm btn-outline-secondary facebook"><i class="bi bi-facebook"></i></a>
                             <a href="https://instagram.com" class="btn btn-sm btn-outline-secondary instagram"><i class="bi bi-instagram"></i></a>
@@ -1824,7 +1793,7 @@
                             <a href="#" class="text-decoration-none text-white"><small>My Account</small></a>
                         </div>
                     </div>
-                    <div class="col-md-12 d-flex justify-content-between mt-5">
+                    <div class="col-md-12 d-flex justify-content-between mt-5 mb-3">
                         <div class="col-lg-2 col-md-5 col-sm-6">
                             <div class="d-flex flex-column justify-content-between h-100 slide-left">
                                 <h5 class="text-white fw-bold">Marketplace</h5>
@@ -1859,7 +1828,7 @@
                         <small class="text-white-50"> © Datas from bootsrap Themes. Made by <a href="#" class="text-decoration-none">Createx ylp</a></small>
                     </div>
                     <div class="col-lg-3">
-                        <div class="d-flex">
+                        <div class="d-flex mt-3">
                             <a href="#" class="text-decoration-none rounded-3"><img src="NFT-images/playstore.png" alt="" class="w-100 d-block"></a>
                             <a href="#" class="text-decoration-none rounded-3 ms-2"><img src="NFT-images/apple.png" alt="" class="w-100 d-block"></a>
                         </div>
@@ -1869,7 +1838,7 @@
         </div>
     </div>
 </footer>
-<section class="container scroll-top">
+<section class="container-fluid scroll-top">
     <div class="row">
         <div class="col">
             <a href="#home" id="scrollToTop" class="scrollToTop p-3 d-inline-block rounded-2 position-fixed d-none animate__animated" style="background-color: #61039a; right: 50px; bottom: 70px">

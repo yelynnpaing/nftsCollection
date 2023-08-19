@@ -9,8 +9,12 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light position-fixed w-100 fixed-top py-4 navBar animate__animated ">
     <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="NFT-images/favicon.png" alt="" class="favicon">
+        <a class="navbar-brand" href="index.html">
+            <!-- <img src="NFT-images/favicon.png" alt="" class="favicon"> -->
+            <div class="d-flex align-items-center">
+                <i class="bi bi-cart-dash-fill text-danger fw-bold fs-1 mb-2"></i>
+                <h4 class="fw-bold text-muted ps-1">Cartzilla</h4>
+            </div>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -55,58 +59,15 @@
             <div class="d-flex align-items-center ms-auto">
                 <div class="nav-link-cus fw-bold search" id="search">
                     <a href="#" class="text-decoration-none">
-                        <i class="bi bi-search" style="font-size: 1.2rem" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Search"></i>
+                        <i class="bi bi-search" style="font-size: 1.2rem" data-bs-toggle="tooltip"
+                         data-bs-placement="top" data-bs-title="Search"></i>
                     </a>
                 </div>
                 <div class="nav-link-cus fw-bold">
                     <a href="#" class="text-decoration-none">
-                        <i class="bi bi-person" style="font-size: 1.5rem" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Account" data-bs-target="reg-modal"></i>
+                        <i class="bi bi-person" style="font-size: 1.5rem" data-bs-toggle="tooltip" 
+                        data-bs-placement="top" data-bs-title="Account" data-bs-target="reg-modal"></i>
                     </a>
-                    <!-- Modal -->
-                    <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <div class="">
-                                        <a href="#" class="text-decoration-none">
-                                            <i class="bi bi-lock"></i>
-                                            <small>Sign in</small>
-                                        </a>
-                                    </div>
-                                    <div class="px-5">
-                                        <a href="#" class="text-decoration-none">
-                                            <i class="bi bi-person"></i>
-                                            <small>Sign Up</small>
-                                        </a>
-                                    </div>
-                                    <a type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
-                                </div>
-                                <div class="modal-body">
-                                    <form action="">
-                                        <div class="mb-3">
-                                            <label for="email" class="col-form-label">Email address: </label>
-                                            <input type="text" id="email" class="form-control" placeholder="example@gmail.com">
-                                        </div>
-                                        <div class="">
-                                            <label for="password" class="col-form-label">Password</label>
-                                            <div class="input-group">
-                                                <input type="password" id="password" class="form-control input-group-text">
-                                                <i class="bi bi-eye input-group-text border-0"></i>
-                                            </div>
-                                        </div>
-                                        <div class="mt-2 d-flex justify-content-between mb-3">
-                                            <div class="form-check form-switch">
-                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                                                <p>Remember Me</p>
-                                            </div>
-                                            <a href="#" class="text-decoration-none">Forgot Password</a>
-                                        </div>
-                                        <button type="button" class="btn btn-primary w-100">Register</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="nav-link-custom">
                     <a href="#" class="btn btn-primary">

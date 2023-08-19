@@ -8,9 +8,10 @@ import Typed from "typed.js";
 import { Tooltip, Toast, Popover } from 'bootstrap';
 
 let navBar = document.querySelector(".navBar");
+let search = document.querySelector("#search");
+let searchResult = document.querySelector(".searchResult");
 let showFilter  = document.getElementById("show-filter")
 let filterDetail = document.querySelector(".filter-detail");
-let searchText = document.querySelector("#searchText");
 let nftItems = document.getElementById("nftItems");
 let nftJourney = document.getElementById("nft-journey");
 let catalogItems = document.getElementById("catalog-items");
@@ -18,15 +19,31 @@ let catalogSearchText = document.querySelector("#catalogSearchText");
 let scrollToTop = document.querySelector(".scrollToTop");
 
 
-// catalog.addEventListener("mouseenter", function (){
-//     console.log ("show items")
-//     catalogItems.classList.toggle("d-none")
-// })
-// catalog.addEventListener("mouseout", function (){
-//     console.log ("hide items")
-//     catalogItems.classList.toggle("d-none")
-// })
+let tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+let tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
+
+//search
+search.addEventListener("click",function(){
+    // console.log ("show result")
+    searchResult.classList.toggle("invisible");
+    searchResult.classList.add("mb-3")
+    searchResult.classList.toggle("animate__fadeInDown")
+})
+
+//search result typing
+let typed1 = new Typed(searchText, {
+    strings: ['what do you need ?', 'Find now'],
+    typeSpeed: 60,
+    backSpeed: 60,
+    startDelay:1000,
+    backDelay:500,
+    fadeOut:false,
+    cursorChar:'_',
+    attr: 'placeholder',
+    bindInputFocusEvents: true,
+    loop: true
+});
 
 //filter
 showFilter.addEventListener("click",function (){

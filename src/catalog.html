@@ -7,129 +7,98 @@
     <link rel="icon" href="NFT-images/shopping-cart.svg">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light position-fixed w-100 fixed-top mb-5 py-4 navBar animate__animated ">
-    <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="NFT-images/favicon.png" alt="" class="favicon">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="dropdown nav-item">
-                    <a class="nav-link fw-bold" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="dropdown nav-item" id="catalog">
-                    <a class="nav-link fw-bold " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Catalog
-                    </a>
-                    <!--                    <ul class="dropdown-menu" id="catalog-items">-->
-                    <!--                        <li><a class="dropdown-item" href="#">Catalog v.1</a></li>-->
-                    <!--                        <li><a class="dropdown-item" href="#">Catalog v.2</a></li>-->
-                    <!--                        <li><a class="dropdown-item" href="#">Single item - Auction live</a></li>-->
-                    <!--                        <li><a class="dropdown-item" href="#">Single item - Auction ended</a></li>-->
-                    <!--                        <li><a class="dropdown-item" href="#">Single item - Buy now</a></li>-->
-                    <!--                        <li><a class="dropdown-item" href="#">Vendor page</a></li>-->
-                    <!--                        <li><a class="dropdown-item" href="#">Connect wallet</a></li>-->
-                    <!--                        <li><a class="dropdown-item" href="#">Create items</a></li>-->
-                    <!--                    </ul>-->
-                </li>
-                <li class="dropdown nav-item" id="account">
-                    <a class="nav-link fw-bold " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Account
-                    </a>
-                    <ul class="dropdown-menu" id="profile-items">
-                        <li><a class="dropdown-item" href="#">Profile setting</a></li>
-                        <li><a class="dropdown-item" href="#">My items</a></li>
-                        <li><a class="dropdown-item" href="#">My collections</a></li>
-                        <li><a class="dropdown-item" href="#">Favourite</a></li>
-                        <li><a class="dropdown-item" href="#">Notifications</a></li>
-                    </ul>
-                </li>
-
-                <li class="nav-item fw-bold">
-                    <a class="nav-link" href="#">Back to main Demo</a>
-                </li>
-            </ul>
-            <div class="d-flex align-items-center ms-auto">
-                <div class="nav-link-cus fw-bold search" id="search">
-                    <a href="#" class="text-decoration-none">
-                        <i class="bi bi-search" style="font-size: 1.2rem" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Search"></i>
-                    </a>
-                </div>
-                <div class="nav-link-cus fw-bold">
-                    <a href="#" class="text-decoration-none">
-                        <i class="bi bi-person" style="font-size: 1.5rem" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Account" data-bs-target="reg-modal"></i>
-                    </a>
-                    <!-- Modal -->
-                    <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <div class="">
-                                        <a href="#" class="text-decoration-none">
-                                            <i class="bi bi-lock"></i>
-                                            <small>Sign in</small>
-                                        </a>
-                                    </div>
-                                    <div class="px-5">
-                                        <a href="#" class="text-decoration-none">
-                                            <i class="bi bi-person"></i>
-                                            <small>Sign Up</small>
-                                        </a>
-                                    </div>
-                                    <a type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-light position-fixed w-100 fixed-top py-4 navBar animate__animated ">
+                    <div class="container">
+                        <a class="navbar-brand" href="index.html">
+                            <!-- <img src="NFT-images/favicon.png" alt="" class="favicon"> -->
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-cart-dash-fill text-danger fw-bold fs-1 mb-2"></i>
+                                <h4 class="fw-bold text-muted ps-1">Cartzilla</h4>
+                            </div>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2">
+                                <li class="dropdown nav-item">
+                                    <a class="nav-link fw-bold" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="dropdown nav-item" id="catalog">
+                                    <a class="nav-link fw-bold " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Catalog
+                                    </a>
+                                   <ul class="dropdown-menu" id="catalog-items">
+                                       <li><a class="dropdown-item" href="#">Catalog v.1</a></li>
+                                       <li><a class="dropdown-item" href="#">Catalog v.2</a></li>
+                                       <li><a class="dropdown-item" href="#">Single item - Auction live</a></li>
+                                       <li><a class="dropdown-item" href="#">Single item - Auction ended</a></li>
+                                       <li><a class="dropdown-item" href="#">Single item - Buy now</a></li>
+                                       <li><a class="dropdown-item" href="#">Vendor page</a></li>
+                                       <li><a class="dropdown-item" href="#">Connect wallet</a></li>
+                                       <li><a class="dropdown-item" href="#">Create items</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown nav-item" id="account">
+                                    <a class="nav-link fw-bold " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Account
+                                    </a>
+                                    <ul class="dropdown-menu" id="profile-items">
+                                        <li><a class="dropdown-item" href="#">Profile setting</a></li>
+                                        <li><a class="dropdown-item" href="#">My items</a></li>
+                                        <li><a class="dropdown-item" href="#">My collections</a></li>
+                                        <li><a class="dropdown-item" href="#">Favourite</a></li>
+                                        <li><a class="dropdown-item" href="#">Notifications</a></li>
+                                    </ul>
+                                </li>
+                
+                                <li class="nav-item fw-bold">
+                                    <a class="nav-link" href="#">Back to main Demo</a>
+                                </li>
+                            </ul>
+                            <div class="d-flex align-items-center ms-auto">
+                                <div class="nav-link-cus fw-bold search" id="search">
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="bi bi-search" style="font-size: 1.2rem" data-bs-toggle="tooltip"
+                                         data-bs-placement="top" data-bs-title="Search"></i>
+                                    </a>
                                 </div>
-                                <div class="modal-body">
-                                    <form action="">
-                                        <div class="mb-3">
-                                            <label for="email" class="col-form-label">Email address: </label>
-                                            <input type="text" id="email" class="form-control" placeholder="example@gmail.com">
-                                        </div>
-                                        <div class="">
-                                            <label for="password" class="col-form-label">Password</label>
-                                            <div class="input-group">
-                                                <input type="password" id="password" class="form-control input-group-text">
-                                                <i class="bi bi-eye input-group-text border-0"></i>
-                                            </div>
-                                        </div>
-                                        <div class="mt-2 d-flex justify-content-between mb-3">
-                                            <div class="form-check form-switch">
-                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                                                <p>Remember Me</p>
-                                            </div>
-                                            <a href="#" class="text-decoration-none">Forgot Password</a>
-                                        </div>
-                                        <button type="button" class="btn btn-primary w-100">Register</button>
-                                    </form>
+                                <div class="nav-link-cus fw-bold">
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="bi bi-person" style="font-size: 1.5rem" data-bs-toggle="tooltip" 
+                                        data-bs-placement="top" data-bs-title="Account" data-bs-target="reg-modal"></i>
+                                    </a>
+                                </div>
+                                <div class="nav-link-custom">
+                                    <a href="connect.html" class="btn btn-primary connectWallet">
+                                        connect wallet
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="nav-link-custom">
-                    <a href="#" class="btn btn-primary">
-                        connect wallet
-                    </a>
-                </div>
+                </nav>
             </div>
         </div>
-    </div>
-</nav>
-<section class="container" id="showSearch">
-    <div class="row my-5">
+    </section>
+<section class="container">
+    <div class="row" id="showSearch">
         <div class="col-lg-12"></div>
         <div class="col-lg-12">
-            <div class="input-group d-none animate__animated searchResult " id="searchResult">
+            <div class="input-group animate__animated searchResult invisible" id="searchResult" style="margin-top: 150px;">
                 <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
-                <input type="text" style="padding-left: 45px" class="form-control-lg rounded-start w-100" id="searchText">
+                    <input type="text" style="padding-left: 45px; background-color: #f0f2f5;" 
+                    class="form-control-lg rounded-start w-100 border-0 shadow" id="searchText">
             </div>
         </div>
     </div>
 </section>
-<section class="container-fluid slide-Down" id="navBreadcrumb" style="margin-top:85px;">
-    <div class="row align-items-center mt-5 pb-5">
+<section class="container-fluid slide-Down" id="navBreadcrumb">
+    <div class="row align-items-center pb-5">
         <div class="col-lg-12">
             <div class="container">
                 <div class="row py-5">
@@ -157,11 +126,11 @@
     </div>
 </section>
 <section class="container " id="filter">
-    <div class="row bg-light px-4 pb-5 pt-5 mb-5 rounded align-items-center justify-content-between">
-        <div class="col-lg-2 col-md-11 col-sm-11">
+    <div class="row bg-light px-4 pb-5 pt-5 mb-5 rounded ">
+        <div class="col-lg-2 col-md-11 col-sm-11 mb-2">
             <a href="#" class="btn btn-secondary px-4 py-2 border" id="show-filter"><i class="bi bi-funnel">Filter <i class="bi bi-caret-down-fill"></i></i></a>
         </div>
-        <div class="col-lg-7 col-md-10 col-sm-11">
+        <div class="col-lg-7 col-md-10 col-sm-11 mb-2">
             <div class="d-flex border rounded">
                 <div class="input-group d-inline-block">
                     <i class="bi bi-search position-absolute top-50 end-0 translate-middle-y me-4"></i>
@@ -169,7 +138,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-3 col-md-11 col-sm-11 me-0">
+        <div class="col-lg-3 col-md-11 col-sm-11 me-0 mb-2">
             <div class="d-flex align-items-center ">
                 <label for="">Sort By :</label>
                <div class="ms-3 border rounded">
@@ -732,12 +701,6 @@
             </div>
             <hr class="shadow my-3">
             <div class="peginate d-flex flex-wrap align-items-center mb-5">
-                <button class="btn btn-sm-primary bg-light p-3 rounded shadow peginate-btn">
-                    <a class="prev text-decoration-none">
-                        <i class="bi bi-chevron-left"></i>
-                        Prev
-                    </a>
-                </button>
                 <div class="peginate-number text-center mx-auto">
                     <button class="btn btn-sm-primary px-3 py-2 bg-primary pg-one">
                         <a href="" class="text-white text-decoration-none">1</a>
@@ -755,18 +718,12 @@
                         <a href="" class="text-primary text-decoration-none">5</a>
                     </button>
                 </div>
-                <button class="btn btn-sm-primary bg-light p-3 rounded shadow peginate-btn">
-                    <a class="prev text-decoration-none">
-                        Next
-                        <i class="bi bi-chevron-right"></i>
-                    </a>
-                </button>
             </div>
         </div>
     </div>
 </section>
 <section class="container" id="nft-journey">
-    <div class="row mt-5">
+    <div class="row mt-5 mb-5">
         <div class="col-lg-12">
             <h2 class="fw-bold text-center">Begin your NFT journey with us!</h2>
         </div>
@@ -810,7 +767,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-12 d-lg-none d-sm-block mt-3">
+        <div class="col-lg-12 d-lg-none d-sm-block mt-3 mb-5">
             <div id="nftJourneyIndicatorPh" class="carousel slide slide-Down" data-bs-ride="true">
                 <div class="carousel-indicators topCreatorIndicatorPhIcon">
                     <button type="button" data-bs-target="#nftJourneyIndicatorPh" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -873,10 +830,10 @@
         <div class="col-lg-12 col-md-12 col-11 subscribe-card">
             <h2 class="fw-bold mb-0">Never miss a drop!</h2>
             <p class="mb-0 subscribe-text">Subscribe to our ultra-exclusive drop list and be the first to know about upcoming drops.</p>
-            <div class="input-group subscribe-input-group mb-3 justify-content-center align-items-center">
-                <i class="bi bi-envelope position-absolute top-50 start-0 translate-middle-y ms-3"></i>
-                <input type="email" name="EMAIL" class="form-control-lg border-0 rounded-start" placeholder="Your Email" style="padding-left: 45px;" required>
-                <a href="#" class="btn btn-lg btn-primary">Subscribe <sup>*</sup></a>
+            <div class="input-group mt-4 mb-1 d-flex w-75">
+                <i class="bi bi-envelope position-relative top-50 start-0 input-group-text bg-white"></i>
+                <input type="email" name="EMAIL" class="form-control border-0" placeholder="Your Email" required>
+                <a href="#" class="btn btn btn-primary">Subscribe <sup>*</sup></a>
             </div>
             <small class="d-block"><sup>*</sup>Receive early discount offers, updates and new products info.</small>
         </div>
@@ -892,10 +849,10 @@
                     <div class="col-lg-12 py-5"></div>
                     <div class="col-lg-5 col-md-5 col-sm-6 slide-left">
                         <h5 class="text-white">Stay Informed</h5>
-                        <div class="input-group subscribe-input-group mb-3">
-                            <i class="bi bi-envelope position-absolute top-50 start-0 translate-middle-y ms-3"></i>
-                            <input type="email" name="EMAIL" class="form-control-lg border-0 rounded-start" placeholder="Your Email" style="padding-left: 45px;" required>
-                            <a href="#" class="btn btn-lg btn-primary">Subscribe <sup>*</sup></a>
+                        <div class="input-group mt-4 mb-1 d-flex w-75">
+                            <i class="bi bi-envelope position-relative top-50 start-0 input-group-text bg-white"></i>
+                            <input type="email" name="EMAIL" class="form-control border-0" placeholder="Your Email" required>
+                            <a href="#" class="btn btn btn-primary">Subscribe <sup>*</sup></a>
                         </div>
                         <small class="text-white-50"><sup>*</sup>Subscribe to our newsletter to receive early discount offers, updates and new products info.</small>
                         <div class="mt-5">
@@ -947,7 +904,7 @@
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-lg-12 py-5"></div>
-                    <div class="col-lg-12 py-5"></div>
+                    <div class="col-lg-12 py-5 d-sm-none"></div>
                     <div class="col-lg-12 py-5"></div>
                     <div class="col-lg-4 col-md-5 col-sm-6 slide-left">
                         <h5 class="text-white">Stay Informed</h5>
@@ -956,7 +913,9 @@
                             <input type="email" name="EMAIL" class="form-control border-0" placeholder="Your Email" required>
                             <a href="#" class="btn btn btn-primary">Subscribe <sup>*</sup></a>
                         </div>
-                        <small class="text-white-50"><sup>*</sup>Subscribe to our newsletter to receive early discount offers, updates and new products info.</small>
+                        <small class="text-white-50"><sup>*</sup>Subscribe to our newsletter to receive early discount offers, 
+                            updates and new products info.
+                        </small>
                         <div class="mt-5">
                             <a href="https://twitter.com" class="btn btn-sm btn-outline-secondary twitter"><i class="bi bi-twitter"></i></a>
                             <a href="https://facebook.com" class="btn btn-sm btn-outline-secondary facebook"><i class="bi bi-facebook"></i></a>
@@ -966,7 +925,7 @@
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-5 col-sm-6">
-                        <div class="d-flex flex-column justify-content-between h-100 slide-left">
+                        <div class="d-flex flex-column justify-content-between h-100 slide-left mt-3">
                             <h5 class="text-white fw-bold">Company</h5>
                             <a href="#" class="text-decoration-none text-white"><small>About Us</small></a>
                             <a href="#" class="text-decoration-none text-white"><small>How it Works</small></a>
@@ -976,7 +935,7 @@
                             <a href="#" class="text-decoration-none text-white"><small>My Account</small></a>
                         </div>
                     </div>
-                    <div class="col-md-12 d-flex justify-content-between mt-5">
+                    <div class="col-md-12 d-flex justify-content-between mt-5 mb-3">
                         <div class="col-lg-2 col-md-5 col-sm-6">
                             <div class="d-flex flex-column justify-content-between h-100 slide-left">
                                 <h5 class="text-white fw-bold">Marketplace</h5>
@@ -1010,7 +969,7 @@
                     <div class="col-lg-5">
                         <small class="text-white-50"> © Datas from bootsrap Themes. Made by <a href="#" class="text-decoration-none">Createx ylp</a></small>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 mt-3">
                         <div class="d-flex">
                             <a href="#" class="text-decoration-none rounded-3"><img src="NFT-images/playstore.png" alt="" class="w-100 d-block"></a>
                             <a href="#" class="text-decoration-none rounded-3 ms-2"><img src="NFT-images/apple.png" alt="" class="w-100 d-block"></a>

@@ -5,140 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NFTs-Collection</title>
     <link rel="icon" href="/assets/shopping-cart.e94ff9c5.svg">
-  <script type="module" crossorigin src="/assets/index.3c7acb0d.js"></script>
-  <link rel="stylesheet" href="/assets/index.b8784570.css">
+  <script type="module" crossorigin src="/assets/index.bad9600e.js"></script>
+  <link rel="stylesheet" href="/assets/index.b9892622.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light position-fixed w-100 fixed-top mb-5 py-4 navBar animate__animated ">
-    <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="/assets/favicon.6cadf965.png" alt="" class="favicon">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="dropdown nav-item">
-                    <a class="nav-link fw-bold" aria-current="page" href="#home">Home</a>
-                </li>
-                <li class="dropdown nav-item" id="catalog">
-                    <a class="nav-link fw-bold " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Catalog
+<section class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg navbar-light position-fixed w-100 fixed-top mb-5 py-4 navBar animate__animated ">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- <img src="NFT-images/favicon.png" alt="" class="favicon"> -->
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-cart-dash-fill text-danger fw-bold fs-1 mb-2"></i>
+                            <h4 class="fw-bold text-muted ps-1">Cartzilla</h4>
+                        </div>
                     </a>
-<!--                    <ul class="dropdown-menu" id="catalog-items">-->
-<!--                        <li><a class="dropdown-item" href="#">Catalog v.1</a></li>-->
-<!--                        <li><a class="dropdown-item" href="#">Catalog v.2</a></li>-->
-<!--                        <li><a class="dropdown-item" href="#">Single item - Auction live</a></li>-->
-<!--                        <li><a class="dropdown-item" href="#">Single item - Auction ended</a></li>-->
-<!--                        <li><a class="dropdown-item" href="#">Single item - Buy now</a></li>-->
-<!--                        <li><a class="dropdown-item" href="#">Vendor page</a></li>-->
-<!--                        <li><a class="dropdown-item" href="#">Connect wallet</a></li>-->
-<!--                        <li><a class="dropdown-item" href="#">Create items</a></li>-->
-<!--                    </ul>-->
-                </li>
-                <li class="dropdown nav-item" id="account">
-                    <a class="nav-link fw-bold " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Account
-                    </a>
-                    <ul class="dropdown-menu" id="profile-items">
-                        <li><a class="dropdown-item" href="#">Profile setting</a></li>
-                        <li><a class="dropdown-item" href="#">My items</a></li>
-                        <li><a class="dropdown-item" href="#">My collections</a></li>
-                        <li><a class="dropdown-item" href="#">Favourite</a></li>
-                        <li><a class="dropdown-item" href="#">Notifications</a></li>
-                    </ul>
-                </li>
-
-                <li class="nav-item fw-bold">
-                    <a class="nav-link" href="#">Back to main Demo</a>
-                </li>
-            </ul>
-            <div class="d-flex align-items-center ms-auto">
-                <div class="nav-link-cus fw-bold search" id="search">
-                    <a href="#" class="text-decoration-none">
-                        <i class="bi bi-search" style="font-size: 1.2rem" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Search"></i>
-                    </a>
-                </div>
-                <div class="nav-link-cus fw-bold">
-                    <a href="#" class="text-decoration-none">
-                        <i class="bi bi-person" style="font-size: 1.5rem" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Account" data-bs-target="reg-modal"></i>
-                    </a>
-                    <!-- Modal -->
-                    <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <div class="">
-                                        <a href="#" class="text-decoration-none">
-                                            <i class="bi bi-lock"></i>
-                                            <small>Sign in</small>
-                                        </a>
-                                    </div>
-                                    <div class="px-5">
-                                        <a href="#" class="text-decoration-none">
-                                            <i class="bi bi-person"></i>
-                                            <small>Sign Up</small>
-                                        </a>
-                                    </div>
-                                    <a type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
-                                </div>
-                                <div class="modal-body">
-                                    <form action="">
-                                        <div class="mb-3">
-                                            <label for="email" class="col-form-label">Email address: </label>
-                                            <input type="text" id="email" class="form-control" placeholder="example@gmail.com">
-                                        </div>
-                                        <div class="">
-                                            <label for="password" class="col-form-label">Password</label>
-                                            <div class="input-group">
-                                                <input type="password" id="password" class="form-control input-group-text">
-                                                <i class="bi bi-eye input-group-text border-0"></i>
-                                            </div>
-                                        </div>
-                                        <div class="mt-2 d-flex justify-content-between mb-3">
-                                            <div class="form-check form-switch">
-                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                                                <p>Remember Me</p>
-                                            </div>
-                                            <a href="#" class="text-decoration-none">Forgot Password</a>
-                                        </div>
-                                        <button type="button" class="btn btn-primary w-100">Register</button>
-                                    </form>
-                                </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2">
+                            <li class="dropdown nav-item">
+                                <a class="nav-link fw-bold" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="dropdown nav-item" id="catalog">
+                                <a class="nav-link fw-bold " href="catalog.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Catalog
+                                </a>
+                               <ul class="dropdown-menu" id="catalog-items">
+                                   <li><a class="dropdown-item" href="#">Catalog v.1</a></li>
+                                   <li><a class="dropdown-item" href="#">Catalog v.2</a></li>
+                                   <li><a class="dropdown-item" href="#">Single item - Auction live</a></li>
+                                   <li><a class="dropdown-item" href="#">Single item - Auction ended</a></li>
+                                   <li><a class="dropdown-item" href="#">Single item - Buy now</a></li>
+                                   <li><a class="dropdown-item" href="#">Vendor page</a></li>
+                                   <li><a class="dropdown-item" href="#">Connect wallet</a></li>
+                                   <li><a class="dropdown-item" href="#">Create items</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown nav-item" id="account">
+                                <a class="nav-link fw-bold " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Account
+                                </a>
+                                <ul class="dropdown-menu" id="profile-items">
+                                    <li><a class="dropdown-item" href="#">Profile setting</a></li>
+                                    <li><a class="dropdown-item" href="#">My items</a></li>
+                                    <li><a class="dropdown-item" href="#">My collections</a></li>
+                                    <li><a class="dropdown-item" href="#">Favourite</a></li>
+                                    <li><a class="dropdown-item" href="#">Notifications</a></li>
+                                </ul>
+                            </li>
+            
+                            <li class="nav-item fw-bold">
+                                <a class="nav-link" href="#">Back to main Demo</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex align-items-center ms-auto">
+                            <div class="nav-link-cus fw-bold search" id="search">
+                                <a href="#" class="text-decoration-none">
+                                    <i class="bi bi-search" style="font-size: 1.2rem" data-bs-toggle="tooltip" 
+                                    data-bs-placement="top" data-bs-title="Search"></i>
+                                </a>
+                            </div>
+                            <div class="nav-link-cus fw-bold">
+                                <a href="#" class="text-decoration-none" title="account">
+                                    <i class="bi bi-person" style="font-size: 1.5rem" data-bs-toggle="tooltip"  
+                                    data-bs-placement="top" data-bs-title="Account" data-bs-target="reg-modal"></i>
+                                </a>
+                            </div>
+                            <div class="nav-link-custom">
+                                <a href="connect.html" class="btn btn-primary connectWallet">
+                                    connect wallet
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="nav-link-custom">
-                    <a href="connect.html" class="btn btn-primary connectWallet">
-                        connect wallet
-                    </a>
-                </div>
-            </div>
+            </nav>
         </div>
     </div>
-</nav>
+</section>
 <section class="container-fluid vskew" id="home">
     <div class="row justify-content-center align-items-center my-5 min-vh-100">
-        <div class="col-lg-10">
-            <div class="container skewContainer" >
-                <div class="row mt-5">
-                    <div class="col-lg-12 mt-5 mb-3">
-                        <div class="input-group invisible animate__animated searchResult" id="searchResult">
+        <div class="col-lg-12">
+            <div class="container skewContainer mt-5">
+                <div class="row ">
+                    <div class="col-lg-12">
+                        <div class="input-group invisible animate__animated searchResult mt-5 mb-3" id="searchResult">
                             <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
-                            <input type="text" style="padding-left: 45px" class="form-control-lg rounded-start w-100 border-0" id="searchText">
+                            <input type="text" style="padding-left: 45px" class="form-control-lg rounded-start w-100 border-0" 
+                            id="searchText">
                         </div>
                     </div>
                 </div>
-                <div class="row min-vh-80 mt-5 mb-5 align-items-center justify-content-center" id="heroData">
+                <div class="row min-vh-80 mb-5 align-items-center justify-content-center" id="heroData">
                     <div class="col-lg-6 col-md-10 mb-5">
                         <div class="me-lg-5">
-                            <h6 class="display-6 fw-bold me-1 slide-Down">Discover rare digital art and collect NFTs</h6>
+                            <h6 class="display-6 fw-bold text-black-50 me-1 slide-Down">Discover Rare Digital Art and collect NFTs</h6>
                             <p class="mt-3 mb-4 text-black-50 slide-Down">The world's first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs).</p>
                             <div class="mt-5">
                                 <a href="#" class="btn btn-lg btn-primary py-2 px-3 me-3 mb-lg-0 mb-md-0 mb-4 slide-Down">Explore marketplace</a>
-                                <a href="#" class="btn btn-lg btn-outline-secondary py-2 px-3 text-black slide-Down">Create your NFT</a>
+                                <a href="#" class="btn btn-lg btn-outline-secondary py-2 px-3 text-info slide-Down">Create your NFT</a>
                             </div>
                         </div>
                     </div>
@@ -831,7 +800,7 @@
                         </div>
                     </div>
                     <div class="col text-center mt-5 slide-left">
-                        <a href="#" class="btn btn-outline-primary p-2 ">Browse marketplace</a>
+                        <a href="#" class="btn btn-primary p-2 ">Browse marketplace</a>
                     </div>
                 </div>
                 </div>
@@ -1218,7 +1187,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="d-flex align-items-center my-5 slide-right">
-                            <h3 CLASS="fw-bold">Recommended Collections</h3>
+                            <h3 class="fw-bold">Recommended Collections</h3>
                             <a href="#" class="btn btn-outline-primary ms-auto p-2">
                                 view all
                                 <i class="bi bi-chevron-right"></i>
@@ -1413,7 +1382,7 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="mt-auto">
-                        <img src="/assets/mobile-app-qr.2a1798e5.svg" alt="">
+                        <img src="/assets/mobile-app-qr.bb3e7918.svg" alt="">
                     </div>
                 </div>
             </div>
@@ -1440,7 +1409,7 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="text-center">
-                        <img src="/assets/mobile-app-qr.2a1798e5.svg" alt="">
+                        <img src="/assets/mobile-app-qr.bb3e7918.svg" alt="">
                     </div>
                 </div>
             </div>
@@ -1723,16 +1692,16 @@
         <div class="col-lg-12 col-md-12 col-11 subscribe-card">
             <h2 class="fw-bold mb-0">Never miss a drop!</h2>
             <p class="mb-0 subscribe-text">Subscribe to our ultra-exclusive drop list and be the first to know about upcoming drops.</p>
-            <div class="input-group subscribe-input-group mb-3 justify-content-center align-items-center">
-                <i class="bi bi-envelope position-absolute top-50 start-0 translate-middle-y ms-3"></i>
-                <input type="email" name="EMAIL" class="form-control-lg border-0 rounded-start" placeholder="Your Email" style="padding-left: 45px;" required>
-                <a href="#" class="btn btn-lg btn-primary">Subscribe <sup>*</sup></a>
+            <div class="input-group mt-4 mb-1 d-flex w-75">
+                <i class="bi bi-envelope position-relative top-50 start-0 input-group-text bg-white"></i>
+                <input type="email" name="EMAIL" class="form-control border-0" placeholder="Your Email" required>
+                <a href="#" class="btn btn btn-primary">Subscribe <sup>*</sup></a>
             </div>
-            <small class="d-block"><sup>*</sup>Receive early discount offers, updates and new products info.</small>
+            <small class="d-block mt-2"><sup>*</sup>Receive early discount offers, updates and new products info.</small>
         </div>
     </div>
 </section>
-<footer class="container-fluid d-lg-block d-md-none" id="footer">
+<footer class="container-fluid d-lg-block d-md-none p-5" id="footer">
     <div class="row footer-row p-5">
         <div class="col-lg-12">
             <div class="container">
@@ -1807,7 +1776,7 @@
                             <a href="#" class="btn btn btn-primary">Subscribe <sup>*</sup></a>
                         </div>
                         <small class="text-white-50"><sup>*</sup>Subscribe to our newsletter to receive early discount offers, updates and new products info.</small>
-                        <div class="mt-5">
+                        <div class="mt-5 mb-3">
                             <a href="https://twitter.com" class="btn btn-sm btn-outline-secondary twitter"><i class="bi bi-twitter"></i></a>
                             <a href="https://facebook.com" class="btn btn-sm btn-outline-secondary facebook"><i class="bi bi-facebook"></i></a>
                             <a href="https://instagram.com" class="btn btn-sm btn-outline-secondary instagram"><i class="bi bi-instagram"></i></a>
@@ -1826,7 +1795,7 @@
                             <a href="#" class="text-decoration-none text-white"><small>My Account</small></a>
                         </div>
                     </div>
-                    <div class="col-md-12 d-flex justify-content-between mt-5">
+                    <div class="col-md-12 d-flex justify-content-between mt-5 mb-3">
                         <div class="col-lg-2 col-md-5 col-sm-6">
                             <div class="d-flex flex-column justify-content-between h-100 slide-left">
                                 <h5 class="text-white fw-bold">Marketplace</h5>
@@ -1861,7 +1830,7 @@
                         <small class="text-white-50"> © Datas from bootsrap Themes. Made by <a href="#" class="text-decoration-none">Createx ylp</a></small>
                     </div>
                     <div class="col-lg-3">
-                        <div class="d-flex">
+                        <div class="d-flex mt-3">
                             <a href="#" class="text-decoration-none rounded-3"><img src="data:image/png;base64,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" alt="" class="w-100 d-block"></a>
                             <a href="#" class="text-decoration-none rounded-3 ms-2"><img src="data:image/png;base64,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" alt="" class="w-100 d-block"></a>
                         </div>
@@ -1871,7 +1840,7 @@
         </div>
     </div>
 </footer>
-<section class="container">
+<section class="container-fluid scroll-top">
     <div class="row">
         <div class="col">
             <a href="#home" id="scrollToTop" class="scrollToTop p-3 d-inline-block rounded-2 position-fixed d-none animate__animated" style="background-color: #61039a; right: 50px; bottom: 70px">
