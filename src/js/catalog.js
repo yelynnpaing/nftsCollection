@@ -26,7 +26,7 @@ let tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.
 //search
 search.addEventListener("click",function(){
     // console.log ("show result")
-    searchResult.classList.toggle("invisible");
+    searchResult.classList.toggle("d-none");
     searchResult.classList.add("mb-3")
     searchResult.classList.toggle("animate__fadeInDown")
 })
